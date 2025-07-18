@@ -3,16 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "verbose": true,
-    "detectOpenHandles": true
+    "debug": "node --inspect-brk src/server.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
-    "mongoose": "^8.16.3"
+    "mongoose": "^8.16.4"
   },
   "devDependencies": {
     "jest": "^30.0.4",
